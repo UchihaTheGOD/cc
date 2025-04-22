@@ -1,0 +1,61 @@
+calculator
+steps
+1. file-new project-javaweb-web service-
+2.right click on name you given to web service - new - web service- web service name:calculator - package name - finish
+3.design-add operation - name - datatype:double - (same process for sub mul div)
+4.change the return values (n1+n2) same for other
+5.right click on new project you have created- clean and build
+(wait some time)
+6. now right click on project and diploy it
+7. now go on web service -test web services
+your calculator is ready
+
+consuming the web service using java application client(first you have to create calculator web service)
+
+1. file - new file - new project-java-java application -name- WebServiceCalClient - finish
+2.right click on application you have created - web service client
+3. project - browse - select calculator web service we have created in calculator 4. finish
+4. webservicecalclien - webservicecalclient.java 
+5. after main method drag and drop the add method
+6.in main method
+          try{
+               int a = 10;
+               int b = 5;
+               double r1 = add(a,b);
+               double r2 = sub(a,b);
+                     mul, div same
+            
+              System.out.println("Addition = " + r1);
+              System.out.println("substraction" = " + r2);
+              same for mul div
+            }
+          catch (Exeption e)
+          {
+            System.out.println("Error: "+e);
+right click and run the file
+
+
+
+creating Simple SOAP web service that connects to MySQL database using java netbeans
+
+1. go in my sql database: enter password
+2. create database bookshop;
+3. use bookshop;
+4. create table books(isbn varchar(20) primary key, bookname varchar(100), bookprice varchar(10));
+5. show table
+6. insert into books values("111-222-333","Learn My SQL","250");
+insert 4- 5 records like this
+7. select*from books;
+
+
+
+
+
+
+
+
+
+
+
+
+
